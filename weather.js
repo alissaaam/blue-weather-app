@@ -79,19 +79,3 @@ function showTemperature(response) {
   let description = document.querySelector("#description");
   description.innerHTML = response.data.weather[0].main;
 }
-
-function showPosition(position) {
-  let latitude = position.coords.latitude;
-  let longitude = position.coords.longitude;
-  let apiKey = "4aabeaa6f84c5efb46c8556781e1ac0f";
-  let units = "metric";
-  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=${units}`;
-  axios.get(apiUrl).then(showTemperature);
-}
-
-function getCurrentPosition(event) {
-  event.preventDefault();
-  navigator.geolocation.getCurrentPosition(showPosition);
-}
-let currentButton = document.querySelector("#current-temp");
-currentButton.addEventListener("click", getCurrentPosition);
