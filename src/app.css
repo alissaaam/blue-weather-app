@@ -1,0 +1,70 @@
+body {
+  font-family: "Pacifico", cursive;
+  font-family: "PT Mono", monospace;
+}
+h1 {
+  font-size: 45px;
+  margin: 25px;
+}
+h2 {
+  font-size: 18px;
+}
+h3 {
+  font-size: 18px;
+}
+ul {
+  position: relative;
+  bottom: 70px;
+  right: -350px;
+}
+li {
+  list-style: none;
+}
+
+a:hover {
+  color: black;
+  cursor: pointer;
+}
+strong {
+  color: grey;
+}
+.temperature {
+  font-size: 50px;
+}
+.degrees {
+  position: relative;
+  top: -26px;
+}
+.container {
+  max-width: 700px;
+  padding: 10px;
+  margin: 40px auto;
+  border: 1px solid #f8fcfb;
+  border-radius: 10px;
+  background: #e4f1fe;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.search-button {
+  background: blue;
+  border: 1px solid blue;
+  color: white;
+}
+.emojis {
+  padding-right: 150px;
+}
+.forecast {
+  border: 1px solid #f8fcfb;
+  background: #f8fcfb;
+  margin: 0 15px;
+  padding: 15px 5px;
+  border-radius: 7px;
+  max-width: 310px;
+  opacity: 0.5;
+  display: block;
+  margin: 0 auto;
+}
+a {
+  text-decoration: none;
+}
