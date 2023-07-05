@@ -10,6 +10,10 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+    <script
+      src="https://kit.fontawesome.com/5c5969b48f.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -41,17 +45,22 @@
 
       <h1 id="current-city">Florida</h1>
       <h2>Monday May 15, 3:12 PM</h2>
+
       <h3 id="description">Partly Sunny</h3>
-      <div>
-        <span class="temperature" id="temperature-value">32</span>
-        <span class="degrees">
-          <a href="#" id="celsius-unit">°C</a>
-        </span>
+      <div class="row">
+        <div class="col-6">
+          <i class="fa-solid fa-cloud-sun"></i>
+          <span class="temperature" id="temperature-value">32</span>
+          <a href="#">°C |</a>
+          <a href="#" id="fahrenheit-unit">°F</a>
+        </div>
+        <div clsss="col-6">
+          <ul>
+            <li>Wind:<span id="wind">13</span>km/h</li>
+            <li>Humidity:<span id="humidity">54</span>%</li>
+          </ul>
+        </div>
       </div>
-      <ul>
-        <li>Wind:<span id="wind">13</span>km/h</li>
-        <li>Humidity:<span id="humidity">54</span>%</li>
-      </ul>
       <div class="forecast">
         <span class="emojis">☼</span>
         <span class="days"> Mon 27° <strong>21°</strong></span>
