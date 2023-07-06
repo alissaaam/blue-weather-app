@@ -10,10 +10,7 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    <script
-      src="https://kit.fontawesome.com/5c5969b48f.js"
-      crossorigin="anonymous"
-    ></script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -56,38 +53,63 @@
 
           <div class="row">
             <div class="col-6">
-              <i class="fa-solid fa-cloud-sun"></i>
-              <small class="temperature" id="temperature-value">32</small>
-              <span class="units"
-                ><a href="#" id="celsius-unit">°C | </a> <a href="#">°F </a>
-              </span>
+              <div class="d-flex weather-temperature">
+                <img
+                  src=" https://openweathermap.org/img/wn/02d@2x.png"
+                  alt=""
+                  id="icon"
+                  class="partly-sunny"
+                />
+                <div>
+                  <small class="temperature" id="temperature-value">32</small>
+                  <span class="units"
+                    ><a href="#" id="celsius-unit">°C | </a> <a href="#">°F </a>
+                  </span>
+                </div>
+              </div>
             </div>
             <div class="col-6">
               <ul>
-                <li>Wind:<span id="wind"></span>km/h</li>
-                <li>Humidity:<span id="humidity"></span>%</li>
+                <li>Wind:<span id="wind">13</span>km/h</li>
+                <li>Humidity:<span id="humidity">77</span>%</li>
               </ul>
             </div>
           </div>
           <div class="forecast">
-            <span class="emojis">☼</span>
+            <img
+              src=" https://openweathermap.org/img/wn/01n@2x.png"
+              alt=""
+              id="icon"
+            />
             <span class="days"> Mon 27° <strong>21°</strong></span>
           </div>
           <div class="forecast">
-            <span class="emojis">☼</span>
+            <img
+              src="https://openweathermap.org/img/wn/01n@2x.png"
+              alt=""
+              id="icon"
+            />
             <span class="days"> Tue 33° <strong>22°</strong> </span>
           </div>
 
           <div class="forecast">
-            <span class="emojis">☼</span>
+            <img
+              src="https://openweathermap.org/img/wn/01n@2x.png"
+              alt=""
+              id="icon"
+            />
             <span class="days"> Wed 33° <strong>22°</strong></span>
           </div>
           <div class="forecast">
-            <span class="emojis">☼</span>
+            <img
+              src="https://openweathermap.org/img/wn/01n@2x.png"
+              alt=""
+              id="icon"
+            />
             <span class="days"> Thu 33° <strong>22°</strong></span>
           </div>
           <div class="forecast">
-            <span class="emojis">🌥</span>
+            <img src="https://openweathermap.org/img/wn/02n@2x.png" alt="" />
             <span class="days"> Fri 33° <strong>22°</strong></span>
           </div>
         </div>

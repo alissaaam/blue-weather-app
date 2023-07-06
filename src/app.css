@@ -21,8 +21,8 @@ ul {
   margin: 0;
   padding: 0;
   position: relative;
-  bottom: 20px;
-  right: -90px;
+  bottom: 10px;
+  right: -100px;
 }
 li {
   margin: 0;
@@ -39,13 +39,22 @@ a:hover {
 }
 .units {
   position: relative;
-  top: -32px;
+  top: -28px;
 }
 strong {
   color: grey;
 }
 .temperature {
   font-size: 50px;
+}
+.weather-temperature img {
+  width: 58px;
+  margin-right: 10px;
+}
+.forecast img {
+  margin-right: 120px;
+  padding: 15px 5px;
+  width: 34px;
 }
 .degrees {
   position: relative;
@@ -81,8 +90,6 @@ strong {
 .forecast {
   border: 1px solid #f8fcfb;
   background: #f8fcfb;
-  margin: 0 15px;
-  padding: 15px 5px;
   border-radius: 7px;
   max-width: 310px;
   opacity: 0.5;

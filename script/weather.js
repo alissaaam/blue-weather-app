@@ -47,6 +47,12 @@ function showWeather(response) {
   h3.innerHTML = response.data.weather[0].main;
   let h1 = document.querySelector("#current-city");
   h1.innerHTML = response.data.name;
+  let iconElement = document.querySelector("#icon");
+  iconElement.setAttribute(
+    "src",
+    `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
+  iconElement.setAttribute("alt", response.data.weather[0].main);
 }
 
 function enterCity(event) {
