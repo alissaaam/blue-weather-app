@@ -2,6 +2,9 @@ let currentTime = new Date();
 let h2 = document.querySelector("h2");
 
 let hours = currentTime.getHours();
+if (hours < 10) {
+  hours = `0${hours}`;
+}
 let days = [
   "Sunday",
   "Monday",
@@ -28,11 +31,14 @@ let months = [
 let month = months[currentTime.getMonth()];
 let date = currentTime.getDate();
 let minutes = currentTime.getMinutes();
+if (minutes < 10) {
+  minutes = `0${minutes}`;
+}
 h2.innerHTML = `${day} ${month} ${date}, ${hours}:${minutes} PM `;
 
 function showWeather(response) {
-  let currentTemp = document.querySelector("#temperature-value");
-  currentTemp.innerHTML = Math.round(response.data.main.temp);
+  let currentTemperature = document.querySelector("#temperature-value");
+  currentTemperature.innerHTML = Math.round(response.data.main.temp);
   let humidity = document.querySelector("#humidity");
   humidity.innerHTML = response.data.main.humidity;
   let wind = document.querySelector("#wind");
@@ -58,8 +64,8 @@ let form = document.querySelector("form");
 form.addEventListener("submit", enterCity);
 
 function giveCelsius() {
-  let span = document.querySelector("span");
-  span.innerHTML = `32`;
+  let temperatureElement = document.querySelector("#temperature-value");
+  temperatureElement.innerHTML = `32`;
 }
 let link = document.querySelector("#celsius-unit");
 link.addEventListener("click", giveCelsius);

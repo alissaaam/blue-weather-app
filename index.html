@@ -26,70 +26,83 @@
   </head>
   <body>
     <div class="container">
-      <form>
-        <input
-          type="text"
-          placeholder="Enter a city..."
-          id="search-input"
-          class="city-input"
-          autofocus
-        />
-        <input type="submit" value="Search" class="btn btn-primary shadow-sm" />
-        <input
-          type="submit"
-          value="Current"
-          class="btn btn-success current-button"
-          id="current-temp"
-        />
-      </form>
+      <div class="weather-wrapper">
+        <div class="weather">
+          <form>
+            <input
+              type="text"
+              placeholder="Enter a city..."
+              id="search-input"
+              class="city-input"
+              autofocus
+            />
+            <input
+              type="submit"
+              value="Search"
+              class="btn btn-primary shadow-sm"
+            />
+            <input
+              type="submit"
+              value="Current"
+              class="btn btn-success current-button"
+              id="current-temp"
+            />
+          </form>
 
-      <h1 id="current-city">Florida</h1>
-      <h2>Monday May 15, 3:12 PM</h2>
+          <h1 id="current-city">Florida</h1>
+          <h2>Monday May 15, 3:12 PM</h2>
 
-      <h3 id="description">Partly Sunny</h3>
-      <div class="row">
-        <div class="col-6">
-          <i class="fa-solid fa-cloud-sun"></i>
-          <span class="temperature" id="temperature-value">32</span>
-          <a href="#">°C |</a>
-          <a href="#" id="fahrenheit-unit">°F</a>
+          <h3 id="description">Partly sunny</h3>
+
+          <div class="row">
+            <div class="col-6">
+              <i class="fa-solid fa-cloud-sun"></i>
+              <small class="temperature" id="temperature-value">32</small>
+              <span class="units"
+                ><a href="#" id="celsius-unit">°C | </a> <a href="#">°F </a>
+              </span>
+            </div>
+            <div class="col-6">
+              <ul>
+                <li>Wind:<span id="wind"></span>km/h</li>
+                <li>Humidity:<span id="humidity"></span>%</li>
+              </ul>
+            </div>
+          </div>
+          <div class="forecast">
+            <span class="emojis">☼</span>
+            <span class="days"> Mon 27° <strong>21°</strong></span>
+          </div>
+          <div class="forecast">
+            <span class="emojis">☼</span>
+            <span class="days"> Tue 33° <strong>22°</strong> </span>
+          </div>
+
+          <div class="forecast">
+            <span class="emojis">☼</span>
+            <span class="days"> Wed 33° <strong>22°</strong></span>
+          </div>
+          <div class="forecast">
+            <span class="emojis">☼</span>
+            <span class="days"> Thu 33° <strong>22°</strong></span>
+          </div>
+          <div class="forecast">
+            <span class="emojis">🌥</span>
+            <span class="days"> Fri 33° <strong>22°</strong></span>
+          </div>
         </div>
-        <div clsss="col-6">
-          <ul>
-            <li>Wind:<span id="wind">13</span>km/h</li>
-            <li>Humidity:<span id="humidity">54</span>%</li>
-          </ul>
-        </div>
-      </div>
-      <div class="forecast">
-        <span class="emojis">☼</span>
-        <span class="days"> Mon 27° <strong>21°</strong></span>
-      </div>
-      <div class="forecast">
-        <span class="emojis">☼</span>
-        <span class="days"> Tue 33° <strong>22°</strong> </span>
-      </div>
-
-      <div class="forecast">
-        <span class="emojis">☼</span>
-        <span class="days"> Wed 33° <strong>22°</strong></span>
-      </div>
-      <div class="forecast">
-        <span class="emojis">☼</span>
-        <span class="days"> Thu 33° <strong>22°</strong></span>
-      </div>
-      <div class="forecast">
-        <span class="emojis">🌥</span>
-        <span class="days"> Fri 33° <strong>22°</strong></span>
+        <small>
+          <a
+            href="
+      https://github.com/alissaaam/my-weather-app.git"
+            targer="_blank"
+          >
+            Open-source code</a
+          >
+          by Alissa Michel
+        </small>
       </div>
     </div>
-    <a
-      href="
-      https://github.com/alissaaam/my-weather-app.git"
-    >
-      Open-source code</a
-    >
-    by Alissa Michel
     <script src="./script/weather.js"></script>
   </body>
 </html>
