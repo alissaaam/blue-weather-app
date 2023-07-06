@@ -26,24 +26,24 @@
       <div class="weather-wrapper">
         <div class="weather">
           <form>
-            <input
-              type="text"
-              placeholder="Enter a city..."
-              id="search-input"
-              class="city-input"
-              autofocus
-            />
-            <input
-              type="submit"
-              value="Search"
-              class="btn btn-primary shadow-sm"
-            />
-            <input
-              type="submit"
-              value="Current"
-              class="btn btn-success current-button"
-              id="current-temp"
-            />
+            <div class="row">
+              <div class="col-6">
+                <input
+                  type="text"
+                  placeholder="Enter a city..."
+                  id="search-input"
+                  class="form-control"
+                  autofocus
+                />
+              </div>
+              <div class="col-2">
+                <input
+                  type="submit"
+                  value="Search"
+                  class="btn btn-primary shadow-sm"
+                />
+              </div>
+            </div>
           </form>
 
           <h1 id="current-city">Florida</h1>
@@ -58,7 +58,7 @@
                   src=" https://openweathermap.org/img/wn/02d@2x.png"
                   alt=""
                   id="icon"
-                  class="partly-sunny"
+                  class="Partly sunny"
                 />
                 <div>
                   <small class="temperature" id="temperature-value">32</small>
@@ -109,7 +109,11 @@
             <span class="days"> Thu 33° <strong>22°</strong></span>
           </div>
           <div class="forecast">
-            <img src="https://openweathermap.org/img/wn/02n@2x.png" alt="" />
+            <img
+              src="https://openweathermap.org/img/wn/02n@2x.png"
+              alt=""
+              id="icon"
+            />
             <span class="days"> Fri 33° <strong>22°</strong></span>
           </div>
         </div>

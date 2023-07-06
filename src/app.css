@@ -3,13 +3,13 @@ body {
   font-family: "PT Mono", monospace;
 }
 h1 {
-  font-size: 45px;
+  font-size: 40px;
   margin: 25px;
   font-weight: 100;
   line-height: 1;
 }
 h2 {
-  font-size: 18px;
+  font-size: 17px;
 }
 h3 {
   font-size: 18px;
@@ -45,10 +45,10 @@ strong {
   color: grey;
 }
 .temperature {
-  font-size: 50px;
+  font-size: 44px;
 }
 .weather-temperature img {
-  width: 58px;
+  width: 55px;
   margin-right: 10px;
 }
 .forecast img {
@@ -58,7 +58,8 @@ strong {
 }
 .degrees {
   position: relative;
-  top: -26px;
+  top: -25px;
+  margin-left: 10px;
 }
 .weather-wrapper {
   max-width: 750px;
