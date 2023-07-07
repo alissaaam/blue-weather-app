@@ -13,6 +13,7 @@ h2 {
 }
 h3 {
   font-size: 18px;
+  margin-bottom: 0;
 }
 h3:first letter {
   text-transform: capitalize;
@@ -32,37 +33,37 @@ li {
 
 .units {
   position: relative;
-  top: -28px;
+  font-size: 14px;
+  top: -22px;
 }
 strong {
   color: grey;
 }
 .temperature {
-  font-size: 44px;
+  font-size: 40px;
+  margin-right: 0;
 }
 
 .weather-temperature img {
-  width: 55px;
-  margin-right: 10px;
+  width: 45px;
 }
 .forecast img {
   margin-right: 120px;
   padding: 15px 5px;
   width: 34px;
 }
-.degrees {
-  position: relative;
-  top: -25px;
-}
 .active {
   color: black;
   text-decoration: none;
-}
-.active:hover {
-  text-decoration: none;
   cursor: default;
 }
-
+.active:hover {
+  cursor: default;
+}
+.weather-temperature img {
+  margin-right: 5px;
+  width: 64px;
+}
 .weather-wrapper {
   max-width: 750px;
   margin: 30px auto;
