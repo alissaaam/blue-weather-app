@@ -1,6 +1,5 @@
 body {
-  font-family: "Pacifico", cursive;
-  font-family: "PT Mono", monospace;
+  font-family: arial, sans-serif;
 }
 h1 {
   font-size: 40px;
@@ -44,6 +43,7 @@ strong {
 }
 
 .weather-temperature img {
+  margin-right: 5px;
   width: 60px;
   height: 60px;
 }
@@ -65,7 +65,7 @@ strong {
   width: 64px;
 }
 .weather-wrapper {
-  max-width: 750px;
+  max-width: 850px;
   margin: 30px auto;
 }
 .weather {
