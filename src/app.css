@@ -62,11 +62,10 @@ strong {
 }
 .active {
   color: black;
-  cursor: default;
 }
 .active:hover {
+  cursor: default;
   text-decoration: none;
-  cursor: pointer;
 }
 
 .weather-wrapper {
@@ -74,7 +73,7 @@ strong {
   margin: 30px auto;
 }
 .weather {
-  max-width: 750px;
+  max-width: 780px;
   padding: 10px;
   margin: 30px auto;
   border: 1px solid #f8fcfb;
