@@ -17,15 +17,15 @@
       href="https://fonts.googleapis.com/css2?family=PT+Mono&family=Pacifico&display=swap"
       rel="stylesheet"
     />
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="./src/app.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <title>Weather App</title>
   </head>
   <body>
     <div class="container">
       <div class="weather-wrapper">
         <div class="weather">
-          <form>
+          <form id="search-form">
             <div class="row">
               <div class="col-6">
                 <input
@@ -46,8 +46,8 @@
             </div>
           </form>
 
-          <h1 id="current-city">Florida</h1>
-          <h2>Monday May 15, 3:12 PM</h2>
+          <h1 id="current-city"></h1>
+          <h2 id="current-time">Florida</h2>
 
           <h3 id="description">Partly sunny</h3>
 
@@ -56,14 +56,14 @@
               <div class="d-flex weather-temperature">
                 <img
                   src=" https://openweathermap.org/img/wn/02d@2x.png"
-                  alt=""
+                  alt="Partly sunny"
                   id="icon"
-                  class="Partly sunny"
                 />
                 <div>
-                  <small class="temperature" id="temperature-value">32</small>
+                  <small class="temperature" id="temperature-value"></small>
                   <span class="units"
-                    ><a href="#" id="celsius-unit">°C | </a> <a href="#">°F </a>
+                    ><a href="#" class="active" id="celsius-unit">°C </a>|
+                    <a href="#" id="fahrenheit-unit">°F </a>
                   </span>
                 </div>
               </div>
@@ -121,7 +121,7 @@
           <a
             href="
       https://github.com/alissaaam/my-weather-app.git"
-            targer="_blank"
+            target="_blank"
           >
             Open-source code</a
           >
@@ -129,6 +129,7 @@
         </small>
       </div>
     </div>
+
     <script src="./script/weather.js"></script>
   </body>
 </html>

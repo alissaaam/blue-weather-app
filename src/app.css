@@ -59,8 +59,16 @@ strong {
 .degrees {
   position: relative;
   top: -25px;
-  margin-left: 10px;
 }
+.active {
+  color: black;
+  cursor: default;
+}
+.active:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+
 .weather-wrapper {
   max-width: 750px;
   margin: 30px auto;

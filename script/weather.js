@@ -1,5 +1,5 @@
 let currentTime = new Date();
-let h2 = document.querySelector("h2");
+let h2 = document.querySelector("#current-time");
 
 let hours = currentTime.getHours();
 if (hours < 10) {
@@ -37,6 +37,7 @@ if (minutes < 10) {
 h2.innerHTML = `${day} ${month} ${date}, ${hours}:${minutes} PM `;
 
 function showWeather(response) {
+  celsiusTemperature = response.data.main.temp;
   let currentTemperature = document.querySelector("#temperature-value");
   currentTemperature.innerHTML = Math.round(response.data.main.temp);
   let humidity = document.querySelector("#humidity");
@@ -55,39 +56,44 @@ function showWeather(response) {
   iconElement.setAttribute("alt", response.data.weather[0].main);
 }
 
-function enterCity(event) {
-  event.preventDefault();
-  let searchInput = document.querySelector("#search-input");
-  let citySearched = searchInput.value;
-
+function search(city) {
   let apiKey = "dcb289ab0182fef55a284bc68b9e0fff";
   let units = "metric";
-  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${citySearched}&units=${units}&appid=${apiKey}`;
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=${units}&appid=${apiKey}`;
   axios.get(apiUrl).then(showWeather);
 }
 
-let form = document.querySelector("form");
-form.addEventListener("submit", enterCity);
+function handleSubmit(event) {
+  event.preventDefault();
+  let searchInput = document.querySelector("#search-input");
+  search(searchInput.value);
+}
+search("Florida");
 
-function giveCelsius() {
+let form = document.querySelector("#search-form");
+form.addEventListener("submit", handleSubmit);
+
+function giveFahrenheit(event) {
+  fahrenheitLink.classList.remove("active");
+  celsiusLink.classList.add("active");
+  event.preventDefault();
+  let fahrenheit = (celsiusTemperature * 9) / 5 + 32;
   let temperatureElement = document.querySelector("#temperature-value");
-  temperatureElement.innerHTML = `32`;
+  temperatureElement.innerHTML = Math.round(fahrenheit);
 }
-let link = document.querySelector("#celsius-unit");
-link.addEventListener("click", giveCelsius);
 
-function showTemperature(response) {
-  let currentCity = document.querySelector("#current-city");
-  let cityElement = response.data.name;
-  currentCity.innerHTML = cityElement;
+let fahrenheitLink = document.querySelector("#fahrenheit-unit");
+fahrenheitLink.addEventListener("click", giveFahrenheit);
 
-  let currentTemperature = Math.round(response.data.main.temp);
-  let temp = document.querySelector("#temperature-value");
-  temp.innerHTML = currentTemperature;
-  let cityHumidity = document.querySelector("#humidity");
-  cityHumidity.innerHTML = response.data.main.humidity;
-  let cityWind = document.querySelector("#wind");
-  cityWind.innerHTML = Math.round(response.data.wind.speed);
-  let description = document.querySelector("#description");
-  description.innerHTML = response.data.weather[0].main;
+let celsiusTemperature = null;
+
+function giveCelsius(event) {
+  fahrenheitLink.classList.add("active");
+  celsiusLink.classList.remove("active");
+  event.preventDefault();
+  let temperature = document.querySelector("#temperature-value");
+  temperature.innerHTML = Math.round(celsiusTemperature);
 }
+
+let celsiusLink = document.querySelector("#celsius-unit");
+celsiusLink.addEventListener("click", giveCelsius);
