@@ -11,7 +11,6 @@
       crossorigin="anonymous"
     />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=PT+Mono&family=Pacifico&display=swap"
@@ -78,62 +77,34 @@
               </ul>
             </div>
           </div>
-          <div class="forecast">
+
+          <div class="forecast" id="weather-forecast">
+            <span class="weather-date">Mon</span>
             <img
               src=" https://openweathermap.org/img/wn/01n@2x.png"
               alt=""
-              id="icon"
+              width="42"
             />
-            <span class="days"> Mon 27° <strong>21°</strong></span>
-          </div>
-          <div class="forecast">
-            <img
-              src="https://openweathermap.org/img/wn/01n@2x.png"
-              alt=""
-              id="icon"
-            />
-            <span class="days"> Tue 33° <strong>22°</strong> </span>
+            <span class="weather-temperatures">
+              <span class="weather-forecast-max"> 27°</span>
+              <span class="weather-forecast-min">21°</span>
+            </span>
           </div>
 
-          <div class="forecast">
-            <img
-              src="https://openweathermap.org/img/wn/01n@2x.png"
-              alt=""
-              id="icon"
-            />
-            <span class="days"> Wed 33° <strong>22°</strong></span>
-          </div>
-          <div class="forecast">
-            <img
-              src="https://openweathermap.org/img/wn/01n@2x.png"
-              alt=""
-              id="icon"
-            />
-            <span class="days"> Thu 33° <strong>22°</strong></span>
-          </div>
-          <div class="forecast">
-            <img
-              src="https://openweathermap.org/img/wn/02n@2x.png"
-              alt=""
-              id="icon"
-            />
-            <span class="days"> Fri 33° <strong>22°</strong></span>
-          </div>
-        </div>
-        <small>
-          <a
-            href="
+          <small>
+            <a
+              href="
       https://github.com/alissaaam/my-weather-app.git"
-            target="_blank"
-            class="source"
-          >
-            Open-source code</a
-          >
-          by Alissa Michel
-        </small>
+              target="_blank"
+              class="source"
+            >
+              Open-source code</a
+            >
+            by Alissa Michel
+          </small>
+        </div>
       </div>
     </div>
-
     <script src="./script/weather.js"></script>
   </body>
 </html>

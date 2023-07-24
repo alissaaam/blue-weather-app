@@ -35,8 +35,9 @@ li {
   font-size: 14px;
   top: -22px;
 }
-strong {
-  color: grey;
+.weather-forecast-min {
+  opacity: 0.5;
+  font-weight: 900;
 }
 .temperature {
   font-size: 40px;
@@ -47,11 +48,23 @@ strong {
   width: 60px;
   height: 60px;
 }
-.forecast img {
-  margin-right: 120px;
-  padding: 15px 5px;
-  width: 34px;
+.forecast {
+  border: 1px solid #f8fcfb;
+  background: #f8fcfb;
+  border-radius: 7px;
+  max-width: 260px;
+  opacity: 0.5;
+  display: block;
+  margin: 0 auto;
 }
+
+.weather-date {
+  font-size: 17px;
+}
+.weather-temperatures {
+  font-size: 15px;
+}
+
 .active {
   color: black;
   cursor: default;
@@ -87,19 +100,7 @@ strong {
   border: 1px solid blue;
   color: white;
 }
-.emojis {
-  padding-right: 150px;
-}
 
-.forecast {
-  border: 1px solid #f8fcfb;
-  background: #f8fcfb;
-  border-radius: 7px;
-  max-width: 260px;
-  opacity: 0.5;
-  display: block;
-  margin: 0 auto;
-}
 small .source {
   color: black;
   cursor: pointer;
