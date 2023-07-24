@@ -68,7 +68,6 @@ function handleSubmit(event) {
   let searchInput = document.querySelector("#search-input");
   search(searchInput.value);
 }
-search("Florida");
 
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
@@ -97,3 +96,34 @@ function giveCelsius(event) {
 
 let celsiusLink = document.querySelector("#celsius-unit");
 celsiusLink.addEventListener("click", giveCelsius);
+
+function displayForecast() {
+  let forecastElement = document.querySelector("#weather-forecast");
+  let forecastHTML = ` <div class="row">`;
+  let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+  days.forEach(function (day) {
+    forecast =
+      forecast +
+      `<div class="col-2">
+
+          
+            <img
+              src=" https://openweathermap.org/img/wn/01n@2x.png"
+              alt=""
+              id="icon"
+              width="42"
+            />
+            <div class="weather-date">${day}</div>
+            <div class="weather-temperatures">
+            <span class="weather-forecast-max"> 27° <strong class="weather-forecast-min">21°</strong></span>
+          </div>
+          </div>
+`;
+  });
+
+  forecast = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
+
+displayForecast();
+search("Florida");
