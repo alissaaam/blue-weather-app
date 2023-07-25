@@ -48,15 +48,6 @@ li {
   width: 60px;
   height: 60px;
 }
-.forecast {
-  border: 1px solid #f8fcfb;
-  background: #f8fcfb;
-  border-radius: 7px;
-  max-width: 260px;
-  opacity: 0.5;
-  display: block;
-  margin: 0 auto;
-}
 
 .weather-date {
   font-size: 17px;
@@ -78,8 +69,8 @@ li {
   width: 64px;
 }
 .weather-wrapper {
-  max-width: 850px;
-  margin: 30px auto;
+  max-width: 800px;
+  margin: 40px auto;
 }
 .weather {
   max-width: 900px;
