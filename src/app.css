@@ -69,12 +69,11 @@ li {
   width: 64px;
 }
 .weather-wrapper {
-  max-width: 800px;
-  margin: 40px auto;
+  max-width: 600px;
+  margin: 30px auto;
 }
 .weather {
-  max-width: 900px;
-  padding: 10px;
+  padding: 20px;
   margin: 30px auto;
   border: 1px solid #f8fcfb;
   border-radius: 10px;
@@ -98,4 +97,10 @@ small .source {
 }
 small .source:hover {
   color: blue;
+}
+
+footer {
+  position: fixed;
+  top: 410px;
+  left: 390px;
 }
