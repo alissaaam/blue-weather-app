@@ -64,8 +64,8 @@ li {
   margin: 30px auto;
 }
 .weather {
-  padding: 20px;
-  margin: 30px auto;
+  padding: 25px;
+  margin: 40px auto;
   border: 1px solid #f8fcfb;
   border-radius: 10px;
   background: #e4f1fe;
@@ -81,15 +81,15 @@ li {
   color: white;
 }
 small .source {
-  color: black;
+  color: blue;
   cursor: pointer;
+  text-decoration: none;
 }
 small .source:hover {
   color: blue;
 }
-
 footer {
   position: fixed;
-  top: 410px;
-  left: 390px;
+  top: 420px;
+  left: 400px;
 }
