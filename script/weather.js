@@ -125,30 +125,4 @@ function handleSubmit(event) {
 
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
-
-function giveFahrenheit(event) {
-  celsiusLink.classList.remove("active");
-  fahrenheitLink.classList.add("active");
-  event.preventDefault();
-  let fahrenheit = (celsiusTemperature * 9) / 5 + 32;
-  let temperatureElement = document.querySelector("#temperature-value");
-  temperatureElement.innerHTML = Math.round(fahrenheit);
-}
-
-let fahrenheitLink = document.querySelector("#fahrenheit-unit");
-fahrenheitLink.addEventListener("click", giveFahrenheit);
-
-let celsiusTemperature = null;
-
-function giveCelsius(event) {
-  celsiusLink.classList.add("active");
-  fahrenheitLink.classList.remove("active");
-  event.preventDefault();
-  let temperature = document.querySelector("#temperature-value");
-  temperature.innerHTML = Math.round(celsiusTemperature);
-}
-
-let celsiusLink = document.querySelector("#celsius-unit");
-celsiusLink.addEventListener("click", giveCelsius);
-
 search("Florida");

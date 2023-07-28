@@ -55,15 +55,6 @@ li {
 .weather-temperatures {
   font-size: 15px;
 }
-
-.active {
-  color: black;
-  cursor: default;
-  text-decoration: none;
-}
-.active:hover {
-  text-decoration: none;
-}
 .weather-temperature img {
   margin-right: 5px;
   width: 64px;
@@ -81,7 +72,6 @@ li {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
 .fa-cloud-sun {
   font-size: 25px;
 }
@@ -90,7 +80,6 @@ li {
   border: 1px solid blue;
   color: white;
 }
-
 small .source {
   color: black;
   cursor: pointer;
