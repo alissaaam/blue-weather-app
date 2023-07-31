@@ -34,7 +34,7 @@ let minutes = currentTime.getMinutes();
 if (minutes < 10) {
   minutes = `0${minutes}`;
 }
-h2.innerHTML = `${day} ${month} ${date}, ${hours}:${minutes} PM `;
+h2.innerHTML = `${day} ${month} ${date}, ${hours}:${minutes} `;
 
 function formatDay(timestamp) {
   let currentDate = new Date(timestamp * 1000);
