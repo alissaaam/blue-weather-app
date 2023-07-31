@@ -30,9 +30,9 @@ li {
   list-style: none;
 }
 footer {
-  position: fixed;
-  top: 480px;
-  left: 340px;
+  position: relative;
+  top: 50px;
+  right: -5px;
 }
 .container {
   max-width: 800px;
