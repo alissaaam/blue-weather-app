@@ -31,7 +31,7 @@ li {
 }
 footer {
   position: fixed;
-  top: 450px;
+  top: 480px;
   left: 340px;
 }
 .container {
@@ -71,7 +71,7 @@ footer {
 }
 .weather {
   padding: 25px;
-  margin: 40px auto;
+  margin: 60px auto;
   border: 1px solid black;
   border-radius: 10px;
   background: radial-gradient(
